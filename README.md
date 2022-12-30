@@ -24,6 +24,7 @@ global:
 - Call getComputerChoice and save result in computerSelection (cS = getCC())
 - Call playRound with playerSelection and computerSelection
 - Send the result to the console
+- V2: CALL game instead of the above
 
 getComputerChoice:
 - Pick a random number in [0,2] (3 choices) (Math.random() + Math.floor() + * 3)
@@ -42,6 +43,8 @@ playRound:
 
 game:
 - does the same thing as global 5 times (loop)
+- update scores
+- print scores (in addition to round results)
 - comment out/ move global code to game
 - offer to end game if player is going to lose?
 
