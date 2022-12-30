@@ -16,14 +16,17 @@ To do
 
 ## Pseudocode
 global:
+- Create playerSelection and computerSelection variables
 - Welcome the user to the game (alert)
 - Ask for user input (prompt)
+  - parseInput: check that value is rock, paper, or scissors (case insensitive)
 - Save input in playerSelection (pS = prompt)
 - Call getComputerChoice and save result in computerSelection (cS = getCC())
-- Call playRound with userSelection and computerSelection
+- Call playRound with playerSelection and computerSelection
+- Send the result to the console
 
 getComputerChoice:
-- Pick a random number in [0,2] (3 choices) (Math.random() + Math.floor + * 3)
+- Pick a random number in [0,2] (3 choices) (Math.random() + Math.floor() + * 3)
 - Set string based on number (ternary or ||)
   - 0 = "Rock"
   - 1 = "Paper"
@@ -31,6 +34,7 @@ getComputerChoice:
 - Return the string
 
 playRound:
+- if pS and cS are the same, it's tie - return tie string
 - if pS is rock and cS is scissors, pS wins - return win string
 - else if pS is paper and cS is rock, pS wins - return win string
 - else if pS is scissors and cS is paper, pS wins - return win string
