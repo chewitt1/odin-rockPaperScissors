@@ -50,3 +50,5 @@ game:
 
 # Side Notes
 - I would have called getComputerChoice, getComputerSelection or changed computerSelection, computerChoice (and playerSelection, playerChoice). Obviously the former is simpler.
+- Added parse function
+- Checking wrong input could be more streamlined
